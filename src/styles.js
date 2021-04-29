@@ -9,6 +9,8 @@ export const BasicLayout = styled.div `
     justify-content: space-around;
     padding: 5rem 10rem;
     color: white;
+    
+
 
 `;
 

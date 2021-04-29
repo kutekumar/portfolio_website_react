@@ -1,26 +1,36 @@
 import React from "react"
 import home1 from "../img/home1.jpg";
+//Framer Motion
+import {motion} from "framer-motion";
 
-//Styled Componenet
-import styled from 'styled-components';
 import {BasicLayout, Description, Hide, Image } from "../styles"
 
 
 const AboutSection = () => {
+
+    const titleAnimation = {
+        hidden: {opacity:0},
+        show: {opacity:1, transition: {duration:1}}
+    }
+
+    const container = {
+        hidden: {x:100},
+        show: {x:0, transition: {duration: 0.7, ease:"easeOut", staggerChildren: 1, when:"afterChildren"}}
+    }
     return (
         <BasicLayout>
             <Description>
-                <div className="title">
+                <motion.div variants={container} initial="hidden" animate="show" className="title">
                     <Hide>
-                        <h3>Hi, I'm Kumar.</h3>
+                        <motion.h3 variants={titleAnimation}>Hi, I'm Kumar.</motion.h3>
                     </Hide>
                     <Hide>
-                        <h2> I build <span>value </span> </h2>
+                        <motion.h2 variants={titleAnimation}> I build <span>value </span> </motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>through design.</h2>
+                        <motion.h2 variants={titleAnimation}>through design.</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>I'm a Myanmar Citizen who has the passion of Photography & Designs.</p>
                 <button>Contact Me</button>
             </Description>
