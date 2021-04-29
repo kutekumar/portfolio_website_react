@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 //Styled components
 
@@ -17,15 +18,17 @@ export const BasicLayout = styled.div `
 export const Description = styled.div `
     flex:1;
     padding-right: 5rem;
+    z-index: 2;
     h2{
         font-weight: lighter;
 
     }
 `;
 
-export const Image = styled.div`
+export const Image = styled(motion.div)`
     flex: 1;
     overflow: hidden;
+    z-index: 2;
     img{
         width: 100%;
         height: 80vh;

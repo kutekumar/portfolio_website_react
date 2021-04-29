@@ -2,41 +2,36 @@ import React from "react"
 import home1 from "../img/home1.jpg";
 //Framer Motion
 import {motion} from "framer-motion";
+import {titleAnim, fade, photoAnim} from "../animation";
 
-import {BasicLayout, Description, Hide, Image } from "../styles"
+import { BasicLayout, Description, Hide, Image } from "../styles"
+import Wave from "./Wave";
 
 
 const AboutSection = () => {
 
-    const titleAnimation = {
-        hidden: {opacity:0},
-        show: {opacity:1, transition: {duration:1}}
-    }
-
-    const container = {
-        hidden: {x:100},
-        show: {x:0, transition: {duration: 0.7, ease:"easeOut", staggerChildren: 1, when:"afterChildren"}}
-    }
+   
     return (
         <BasicLayout>
             <Description>
-                <motion.div variants={container} initial="hidden" animate="show" className="title">
+                <motion.div  className="title">
                     <Hide>
-                        <motion.h3 variants={titleAnimation}>Hi, I'm Kumar.</motion.h3>
+                        <motion.h3 variants={titleAnim} >Hi, I'm Kumar.</motion.h3>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}> I build <span>value </span> </motion.h2>
+                        <motion.h2 variants={titleAnim} > I build <span>value </span> </motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}>through design.</motion.h2>
+                        <motion.h2 variants={titleAnim} >through design.</motion.h2>
                     </Hide>
                 </motion.div>
-                <p>I'm a Myanmar Citizen who has the passion of Photography & Designs.</p>
-                <button>Contact Me</button>
+                <motion.p variants={fade}>I'm a Myanmar Citizen who has the passion of Photography & Designs.</motion.p>
+                <motion.button variants={fade}>Contact Me</motion.button>
             </Description>
-            <Image>
+            <Image variants={photoAnim}>
                 <img src={home1} alt="Me"/>
             </Image>
+            <Wave />
         </BasicLayout>
     )
 }
