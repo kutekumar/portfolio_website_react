@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 //Styled components
 
-export const BasicLayout = styled.div `
+export const BasicLayout = styled(motion.div) `
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -11,8 +11,6 @@ export const BasicLayout = styled.div `
     padding: 5rem 10rem;
     color: white;
     
-
-
 `;
 
 export const Description = styled.div `

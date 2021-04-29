@@ -103,3 +103,22 @@ export const sliderContainer = {
         }
     }
 }
+
+export const scrollAnim = {
+    hidden: {
+        opacity: 0,
+        scale: 1.3,
+        transition: {
+            ease: "easeIn",
+            duration: 0.5
+        }
+    },
+    show: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            ease: "easeOut",
+            duration: 0.5
+        }
+    }
+}

@@ -1,11 +1,11 @@
-import React, { Children, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { fade } from "../animation";
 
 
 const Toggle = ({children, title}) =>
 {
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
     return (
         <motion.div variants={fade} initial="hidden" animate="show" layout className="question" onClick={() => setToggle(!toggle)}>
             <motion.h4 layout>{title}</motion.h4>

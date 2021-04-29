@@ -9,12 +9,18 @@ import home2 from "../img/home2.jpg";
 //Styles
 import {BasicLayout, Description, Hide, Image } from "../styles";
 import styled from "styled-components";
+import { scrollAnim } from "../animation";
+import { useScroll } from "./useScroll";
 
 
 
-const ServicesSection = () => {
+const ServicesSection = () =>
+{
+    
+    const [element, controls] = useScroll();
+
     return(
-        <Services>
+        <Services variants={scrollAnim} animate={controls} initial="hidden" ref={element}>
             <Description>
             <h2>High <span>Quality</span> Services</h2>
                 <Cards>
