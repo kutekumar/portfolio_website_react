@@ -31,7 +31,7 @@ const FaqSection = () => {
         </Toggle>
         <Toggle title="Creative Designs">
           <div className="answer">
-            <p>Lear the basic of Design Theory.</p>
+            <p>Lear the basic of Design Principles.</p>
             <p>
               You will learn how to create a eye-candy design using with
               Photoshop and Illustrator.

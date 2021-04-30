@@ -1,9 +1,9 @@
 import React from "react";
 //IMport ICons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
+import web from "../img/web.png";
+import motion from "../img/motion.png";
+import video from "../img/video.png";
+import threeD from "../img/3d.png";
 import home2 from "../img/home2.jpg";
 
 //Styles
@@ -28,14 +28,14 @@ const ServicesSection = () => {
         <Cards>
           <Card>
             <div className="icon">
-              <img src={clock} alt="" />
+              <img src={web} alt="" />
               <h3>Web Development</h3>
             </div>
             <p>Help you to build a professional website for your company.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={diaphragm} alt="" />
+              <img src={motion} alt="" />
               <h3>Motion Designs</h3>
             </div>
             <p>
@@ -44,7 +44,7 @@ const ServicesSection = () => {
           </Card>
           <Card>
             <div className="icon">
-              <img src={money} alt="" />
+              <img src={video} alt="" />
               <h3>Videography</h3>
             </div>
             <p>
@@ -54,7 +54,7 @@ const ServicesSection = () => {
           </Card>
           <Card>
             <div className="icon">
-              <img src={teamwork} alt="" />
+              <img src={threeD} alt="" />
               <h3>3D Visualization</h3>
             </div>
             <p>
@@ -101,6 +101,7 @@ const Card = styled.div`
       padding: 1rem;
     }
   }
+
   @media (max-width: 1400px) {
     margin: 2rem;
     img {
