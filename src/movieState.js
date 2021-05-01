@@ -17,94 +17,55 @@ import thekid2 from "./img/thekid2.jpg";
 export const MovieState = () => {
   return [
     {
-      title: 'The Elegant Evening',
+      title: "The Elegant Evening",
       mainImg: sunrise1,
       secondaryImg: sunrise2,
-      url: '/work/evening',
+
+      url: "/work/evening",
       awards: [
         {
-          title: 'Truly A masterpiece',
+          title: "Yangon's evening view from my balcony.",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'Fresh look on a brutal sport.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'It’s okay lmao.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“The delicate unplanned capture with my SLR camera with multiple exposure shots.”",
         },
       ],
     },
     {
-      title: 'The Blooms',
+      title: "The Blooms",
       mainImg: theflower1,
-      url: '/work/blooms',
+      url: "/work/blooms",
       secondaryImg: theflower2,
       awards: [
         {
-          title: 'Truly A masterpiece',
+          title: "Some Displays of Flowers Show in Yangon",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'Fresh look on a brutal sport.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'It’s okay lmao.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“The Flowers Display Show which held on 2018 in Yangon Kandaw Gyi Park.”",
         },
       ],
     },
     {
-      title: 'The Innocent',
+      title: "The Innocent",
       mainImg: thekid1,
-      url: '/work/the-racer',
+      url: "/work/the-racer",
       secondaryImg: thekid2,
       awards: [
         {
-          title: 'Truly A masterpiece',
+          title: "Students from MLA International",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'Fresh look on a brutal sport.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'It’s okay lmao.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Some shots which I took on 2018 in MLA International School where I works which is one of the reputed school in Yangon.”",
         },
       ],
     },
     {
-      title: 'The Park',
+      title: "The Park",
       mainImg: thepark1,
-      url: '/work/thepark',
+      url: "/work/thepark",
       secondaryImg: thepark2,
       awards: [
         {
-          title: 'Truly A masterpiece',
+          title: "Truly A masterpiece",
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'Fresh look on a brutal sport.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'It’s okay lmao.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },

@@ -25,13 +25,13 @@ const FaqSection = () => {
             <p>Learn to build the stunning websites.</p>
             <p>
               You will learn basic HTML, CSS and Javascript and you will know
-              how to create a stunning website of your own
+              how to create a stunning website of your own.
             </p>
           </div>
         </Toggle>
         <Toggle title="Creative Designs">
           <div className="answer">
-            <p>Lear the basic of Design Principles.</p>
+            <p>Learn the basic of Design Principles.</p>
             <p>
               You will learn how to create a eye-candy design using with
               Photoshop and Illustrator.
